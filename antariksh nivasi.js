@@ -83,7 +83,10 @@ function update() {
     context.clearRect(0, 0, board.width, board.height);
 
     //ship
+   shipImg.onload = function() {
+    // Draw the ship image onto the canvas
     context.drawImage(shipImg, ship.x, ship.y, ship.width, ship.height);
+};
 
     //alien
     for (let i = 0; i < alienArray.length; i++) {
