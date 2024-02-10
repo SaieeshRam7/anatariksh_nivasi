@@ -61,9 +61,12 @@ window.onload = function() {
         context.drawImage(shipImg, ship.x, ship.y, ship.width, ship.height);
     }
 
-    alienImg = new Image();
-    alienImg.src = "./alien.png";
+   let alienImg = new Image();
+alienImg.src = "./alien.png";
+alienImg.onload = function() {
     createAliens();
+};
+
 
     requestAnimationFrame(update);
     document.addEventListener("keydown", moveShip);
