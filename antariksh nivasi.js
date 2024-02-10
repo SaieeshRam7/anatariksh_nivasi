@@ -104,7 +104,13 @@ function update() {
                     alienArray[j].y += alienHeight;
                 }
             }
-            context.drawImage(alienImg, alien.x, alien.y, alien.width, alien.height);
+            let alienImg = new Image();
+alienImg.src = "./alien.png";
+alienImg.onload = function() {
+    // Draw the alien image onto the canvas
+    context.drawImage(alienImg, alien.x, alien.y, alien.width, alien.height);
+};
+
 
             if (alien.y >= ship.y) {
                 gameOver = true;
