@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #video-background {
+            position: fixed;
+            
+            width: 180%;
+            height: 180%;
+            
+            
+        }
+        .login-container {
+            position: relative;
+            z-index: 1;
+            width: 300px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Adjust the opacity to your preference */
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        input{
+            width: calc(100% - 40px);
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <video id="video-background" autoplay loop muted>
+        <source src="antariksh v.mp4" type="video/mp4">
+  
+    </video>
+    
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="index.html" method="POST">
+            <input type="text" name="username" placeholder="Username" required>
+           
+            <input type="submit" value="Start">
+        </form>
+    </div>
+</body>
+</html>

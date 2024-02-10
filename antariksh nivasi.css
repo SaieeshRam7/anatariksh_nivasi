@@ -1,0 +1,19 @@
+body {
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+    color: whitesmoke;
+    background-image: url(joshi.jpeg);
+    
+font-style: normal;
+font-weight: bold;
+
+
+text-shadow: 2px 2px 4px violet;
+
+}
+
+#board {
+    background-color: black;
+    height: 650px;
+width: 1350px;  
+}
